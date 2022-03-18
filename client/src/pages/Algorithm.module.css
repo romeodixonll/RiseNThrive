@@ -1,0 +1,72 @@
+.flex {
+    display: flex;
+    gap: 3vh;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    flex: 1;
+    width: 81% !important;;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+}
+
+.column1 {
+    flex:1 1 50%;
+}
+
+.row1 {
+    flex:1 1 60%
+}
+
+.row2 {
+    flex:1 1
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    gap:3vh;
+}
+
+.row3 p,
+.row3 button {
+    flex: 1 1;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.row3 p {
+    background-color: rgb(192, 1, 1);
+    margin: auto 0;
+    font-weight: bold;
+    color: white;
+}
+
+.row3 button {
+    background-color: green;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.row3 button:hover {
+    background-color: rgba(0, 128, 0, 0.63);
+    cursor: pointer;
+}
+
+.row3 button:active {
+    background-color: rgba(0, 128, 0, 0.20)
+}

@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+.flex {
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+	overflow: hidden
+}
+.page {
+	position: absolute;
+	/* margin-right:3vw; */
+}
+
+.slideUp-appear,
+.slideUp-enter {
+	transform: translateY(120%);
+}
+
+.slideUp-appear-active,
+.slideUp-enter.slideUp-enter-active {
+	transform: translateY(0%);
+	transition: 1000ms ease-in-out;
+}
+
+.slideUp-exit {
+	transform: translateY(0%);
+}
+
+.slideUp-exit-active {
+	transform: translateY(-120%);
+	transition: 1000ms ease-in-out;
+}
+
+.slideUp-exit-done {
+	transform: translateY(-100%);
+}
+
+
+.darkModeSelection div{
+    background-color: rgb(151, 151, 151);
+}
+
+.lightModeSelection div {
+    background-color: rgb(31, 31, 31);
+}
+
+.CodeMirror {
+	flex-grow: 1!important;
+	padding:1vh 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.fade-appear,
+.fade-enter {
+	opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+	opacity: 1;
+	transition: 150ms ease-in-out ;
+}
+
+.fade-exit {
+	transition: 150ms ease-in-out;
+	opacity: 0;
+}
+
+.fade-exit-active {
+	opacity: 0;
+}
+
+.fade-exit-done {
+	opacity: 1;
+}

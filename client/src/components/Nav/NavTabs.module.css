@@ -1,0 +1,52 @@
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-self: center;
+    height: 94vh;
+    margin: auto 0;
+}
+
+.ul li {
+    padding: 5px;
+    border-radius: 10px;
+    transition: 100ms linear;
+}
+
+.ul li a div p {
+    transition:100ms linear;
+    /* text-decoration: none; */
+    /* border: none; */
+    background-color: transparent;
+    color: white;
+}
+
+li:hover,
+.ul li a div p  {
+    cursor: pointer;
+}
+
+.ul li a div {
+    padding: 10px;
+    background-color: transparent;
+    transition-property: background-color;
+    transition: 300ms;
+}
+
+.ul li a div:hover {
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.37);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
